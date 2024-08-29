@@ -4,7 +4,8 @@ import VideocContainer from './VideocContainer'
 
 function MainContainer() {
   return (
-    <div className='flex' ><ButtonList/>
+    <div className='' >
+      <ButtonList/>
     <VideocContainer/>
     </div>
   )

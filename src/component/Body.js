@@ -1,7 +1,7 @@
 import React from 'react'
 import SideBar from './SideBar';
-import MainContainer from './MainContainer'
-import Head from './Head';
+
+import { Outlet } from 'react-router-dom';
 
 
 function Body() {
@@ -9,7 +9,7 @@ function Body() {
     <div className='grid grid-flow-col'>
         
         <SideBar/>
-        <MainContainer/>
+        <Outlet/>
         
     </div>
   )
