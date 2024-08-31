@@ -4,6 +4,7 @@ import { useSearchParams } from 'react-router-dom';
 import { closeMenu } from '../Utils/appSlice';
 import CommentsConatiner from './CommentsConatiner';
 import LiveChat from './LiveChat';
+import MainContainer from './MainContainer';
 
 function WatchPage() {
   const [searchParams] = useSearchParams();
@@ -41,6 +42,9 @@ function WatchPage() {
         <div className='w-2/4'>
           <CommentsConatiner />
         </div>
+        {/* <div className='w-[3/4]'>
+          <MainContainer/>
+        </div> */}
       </div>
     </div>
   );

@@ -111,7 +111,7 @@ const [ShowSuggestions , SetShowSuggestions] = useState(false);
                     
                     className="flex px-4 py-2 hover:bg-gray-100 cursor-pointer"
                   >
-                  <p></p>  {suggestion}
+                  <p>🔍</p>  {suggestion}
                   </li>
                 ))}
               </ul>
