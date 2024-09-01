@@ -25,6 +25,7 @@ Getting the app up and running locally is a breeze! Follow these steps:
 
 2. **📂 Navigate to the project directory:**
 
+   ```bash
 
 cd video-streaming-app
 
