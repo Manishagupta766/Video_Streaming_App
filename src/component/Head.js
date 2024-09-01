@@ -38,26 +38,6 @@ const [ShowSuggestions , SetShowSuggestions] = useState(false);
       return () => clearTimeout(timer);
     };
   }, [SearchQuery]);
-
-  
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     if(searchCache[SearchQuery]){
-  //       setSuggestions(searchCache[SearchQuery]);
-  //     }else{
-  //       getSearchSuggestions();
-  //     }
-  //     if (SearchQuery.trim() !== "") {
-  //       getSearchSuggestions();
-  //     } else {
-  //       setSuggestions([]);
-  //     }
-  //   }, 200); 
-
-  //   return () => clearTimeout(timer); 
-  // }, [SearchQuery]);
-// 
  
   const dispatch = useDispatch();
   const toggleMenuHandler = () => {
@@ -65,7 +45,7 @@ const [ShowSuggestions , SetShowSuggestions] = useState(false);
   };
 
   return (
-    <div className="grid grid-flow-col p-2 m-2 shadow-lg ">
+    <div className="grid grid-flow-col p-2 m-1 mr-0 shadow-lg ">
       
       <div className="flex items-center col-span-1 ">
         <img

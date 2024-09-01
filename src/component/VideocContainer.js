@@ -19,7 +19,7 @@ function VideoContainer() {
   };
 
   return (
-    <div className='flex flex-wrap  justify-normal'>
+    <div className='flex flex-wrap  justify-normal p-2 mr-0'>
       {videos.map((video) => (
         <Link to={`/watch?v=${video.id}`}>
   <VideoCard key={video.id} info={video} />

@@ -6,8 +6,8 @@ function SideBar() {
   const isCollapsed = !isMenuOpen; // Assuming collapsed state means `!isMenuOpen`
 
   return (
-    <div className={`p-4 shadow-lg ${isCollapsed ? 'w-16' : 'w-48'} transition-width duration-300`}>
-      <ul className="space-y-2">
+    <div className={`p-2 shadow-lg ${isCollapsed ? 'w-14' : 'w-48'} transition-width duration-300`}>
+      <ul className="space-y-3">
         <li className={`flex items-center ${isCollapsed ? 'flex-col' : 'flex-row'} p-2 rounded-md hover:bg-gray-200 cursor-pointer ${isCollapsed ? 'space-y-1' : 'space-x-2'}`}>
           <span className="material-icons text-gray-700">home</span>
           {!isCollapsed && <span className="text-sm">Home</span>}
